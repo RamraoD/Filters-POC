@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Users List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+        <span style="color:white;text-align: center;">User Details</span>
+    </a>
+</nav>
+<div class="container-fluid">
+    <div class="row filter">
+        <div class="col-3">
+            <select>
+                <option value="0">Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <select name="status" id="status">
+                <option value="0">Status</option>
+                <option value="1">Active</option>
+                <option value="2">Inactive</option>
+            </select>
+        </div>
+        <div class="col-3 dropdown">
+            <input type="text" id="search" placeholder="Search..">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row header">
+        <div class="col-1">Id</div>
+        <div class="col-3">Name</div>
+        <div class="col-3">Email</div>
+        <div class="col-3">Gender</div>
+        <div class="col-2">Status</div>
+    </div>
+    <div id="myUL">
+        <div class="row">
+            <div class="col-1 id data item"></div>
+            <div class="col-3 name data item"></div>
+            <div class="col-3 email data item"></div>
+            <div class="col-3 gender data item"></div>
+            <div class="col-2 status data item"></div>
+        </div>
+    </div>
+</div>
+
+</html>

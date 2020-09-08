@@ -1,0 +1,13 @@
+.header {
+    background-color: silver ;
+}
+.filter {
+    padding: 5px;
+}
+.even {
+    background-color: #a0a832
+  }
+  
+  #myUL>div:nth-child(even) {
+    background: #a0a832;
+  }
