@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -20,38 +21,46 @@
 </nav>
 <div class="container-fluid">
     <div class="row filter">
-        <div class="col-3">
-            <select>
+        <div class="col">
+            <div id="drop">
+            <select id="gender">
                 <option value="0">Gender</option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
+                <option value="1"></option>
+                <option value="2"></option>
             </select>
+            </div>
         </div>
-        <div class="col-3">
+        <div class="col">
             <select name="status" id="status">
                 <option value="0">Status</option>
                 <option value="1">Active</option>
                 <option value="2">Inactive</option>
             </select>
         </div>
-        <div class="col-3 dropdown">
+        <div class="col">
+            <input type="text" id="from" placeholder="Select start Date">
+        </div>
+        <div class="col">
+            <input type="text" id="to" placeholder="Select End Date">
+        </div>
+        <div class="col">
             <input type="text" id="search" placeholder="Search..">
         </div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row header">
-        <div class="col-1">Id</div>
+        <div class="col-1 d-none d-md-block">Id</div>
         <div class="col-3">Name</div>
-        <div class="col-3">Email</div>
+        <div class="col-3 d-none d-lg-block">Email</div>
         <div class="col-3">Gender</div>
         <div class="col-2">Status</div>
     </div>
     <div id="myUL">
         <div class="row">
-            <div class="col-1 id data item"></div>
+            <div class="col-1 d-none d-md-block id data item"></div>
             <div class="col-3 name data item"></div>
-            <div class="col-3 email data item"></div>
+            <div class="col-3 d-none d-lg-block email data item"></div>
             <div class="col-3 gender data item"></div>
             <div class="col-2 status data item"></div>
         </div>

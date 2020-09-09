@@ -6,8 +6,8 @@
 }
 .even {
     background-color: #a0a832
-  }
+}
   
-  #myUL>div:nth-child(even) {
+#myUL>div:nth-child(even) {
     background: #a0a832;
-  }
+}
